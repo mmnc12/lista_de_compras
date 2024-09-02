@@ -1,0 +1,31 @@
+#alert {
+  & .msg-alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem;
+    background: var(--color-danger);
+    height: 2.75rem;
+    border-radius: .75rem;
+
+    & div {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+
+      & span {
+        font-size: var(--fs-base);
+        font-weight: var(--fw-label);
+        color: var(--always-white);
+      }
+    }
+
+    & button {
+      display: flex;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
